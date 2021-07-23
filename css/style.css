@@ -1,5 +1,5 @@
 :root {
-   /* --background-color: #0f101b;
+    /* --background-color: #0f101b;
     --secondary-color: #22242f;
     --headline-color: #fafaff;
     --font-color: #a5a6b1; */
@@ -59,9 +59,9 @@ body {
     top: 0;
     left: 0;
     animation: navbarAnimate 0.5s ease-in-out forwards;
-    box-shadow: 0 0 10px rgb(0,0,0,.05);
+    box-shadow: 0 0 10px rgb(0, 0, 0, .05);
     background-color: var(--secondary-color);
-    border-radius: 0 0 10px 10px;
+    /* border-radius: 0 0 10px 10px; */
 }
 
 .navbar-container {
@@ -342,7 +342,7 @@ body {
 .body-section {
     padding: 10px;
     margin-top: 80px;
-} 
+}
 
 .img-responsive {
     max-width: 100%;
@@ -364,7 +364,7 @@ body {
     align-items: center;
 }
 
-.row-icon > .icon {
+.row-icon>.icon {
     border-radius: 10px;
 }
 
@@ -448,35 +448,29 @@ body {
 
 @media screen and (max-width: 768px) {
     .body-section {
-       /* display: grid;
+        /* display: grid;
         grid-template-columns: 100%;*/
         padding-top: 0px;
     }
-    
     .row {
         width: 100%;
         padding: 0;
     }
-    
     .col-3,
     .col-9,
     .col-12 {
         width: 100%;
         margin: 0;
     }
-    
     .card {
         margin: 0;
     }
-    
     .card-content {
         margin: 0;
     }
-    
     .card-logo {
         margin: 0;
     }
-    
     .card-body,
     .card-body-left,
     .card-content,
@@ -493,11 +487,9 @@ body {
         max-width: 1000px;
         padding: 0;
     }
-
     .row {
         padding: 0;
     }
-
     .card-body,
     .card-body-left,
     .card-content,
@@ -508,12 +500,14 @@ body {
     }
 }
 
+
 /* Team Section */
+
 .team-container {
     padding: 1.5rem;
 }
 
-.team-container > .container {
+.team-container>.container {
     background-color: var(--secondary-color);
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
     border-radius: 10px;
@@ -522,7 +516,7 @@ body {
     padding: 2rem 1.5rem;
 }
 
-.team-container > .container > .grid {
+.team-container>.container>.grid {
     display: flex;
     flex-direction: column;
     grid-template-columns: 100%;
@@ -530,27 +524,27 @@ body {
     padding: 1rem 0;
 }
 
-.team-container > .container > .grid > .grid-item {
+.team-container>.container>.grid>.grid-item {
     padding: 2rem .5rem;
     width: 100%;
     border-radius: 10px;
     background-color: var(--background-color);
 }
 
-.team-container > .container > .grid > .grid-item > img {
+.team-container>.container>.grid>.grid-item>img {
     width: 60px;
     height: 60px;
     border-radius: 50%;
 }
 
-.team-container > .container > .grid > .grid-item > .flex {
+.team-container>.container>.grid>.grid-item>.flex {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 1rem 0;
 }
 
-.team-container > .container > .grid > .grid-item > .flex > .flex-icon {
+.team-container>.container>.grid>.grid-item>.flex>.flex-icon {
     background-color: rgba(253, 157, 73, .25);
     color: var(--primary-color);
     padding: .5rem;
@@ -562,15 +556,75 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-    .team-container > .container > .grid {
+    .team-container>.container>.grid {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         padding: 2rem;
     }
-
-    .team-container > .container > .grid > .grid-item {
+    .team-container>.container>.grid>.grid-item {
         max-width: 32%;
     }
+}
+
+.container-footer {
+    height: 300px;
+    background-color: var(--bg-light);
+    margin: 0 50px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.copyright {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-size: 10px;
+}
+
+.floatleft {
+    float: left;
+}
+
+.progate {
+    padding-top: 30px;
+    padding-left: 50px;
+    font-family: arial;
+}
+
+td {
+    padding: 5px;
+    font-size: 20px;
+}
+
+table {
+    margin-left: 40px;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+.logo a:hover {
+    opacity: 0.5;
+}
+
+.logo {
+    display: inline-block;
+}
+
+.floatright {
+    padding-top: 40px;
+    margin-left: 900px;
 }
