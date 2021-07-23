@@ -208,15 +208,6 @@ body {
     .navbar-menu.open ul {
         transform: translateX(0);
     }
-    /* .col-3 {
-        width: 100%;
-    }
-    .col-9 {
-        width: 100%;
-    }
-    .col-12 {
-        width: 100%;
-    } */
 }
 
 @media screen and (min-width: 768px) {
@@ -365,7 +356,7 @@ body {
 }
 
 .row-icon>.icon {
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 
@@ -581,7 +572,7 @@ body {
 
 .copyright {
     width: 100%;
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
     width: 100%;
     background-color: black;
     color: white;
@@ -622,13 +613,11 @@ table {
     padding: 2rem 0;
 }
 
-
 @media screen and (max-width: 768px) {
     .footer-container {
         grid-template-columns: 100%;
         margin: 0 1.5rem;
     }
-
     .floatleft {
         padding: 2rem 0;
     }
@@ -639,7 +628,7 @@ table {
         max-width: 985px;
         margin: 0 auto;
     }
-    .floatleft{
+    .floatleft {
         padding: 2rem 0;
     }
     .floatright {
