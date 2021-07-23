@@ -576,6 +576,7 @@ body {
     grid-template-columns: repeat(2, 50%);
     position: relative;
     padding: 0 1.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.025);
 }
 
 .copyright {
@@ -589,13 +590,7 @@ body {
     font-size: .9rem;
 }
 
-.floatleft {
-    /* float: left; */
-}
-
 .progate {
-    padding-top: 30px;
-    padding-left: 50px;
     font-family: arial;
 }
 
@@ -624,7 +619,7 @@ table {
 }
 
 .floatright {
-    padding: 1.5rem;
+    padding: 2rem 0;
 }
 
 
@@ -635,7 +630,7 @@ table {
     }
 
     .floatleft {
-
+        padding: 2rem 0;
     }
 }
 
@@ -643,6 +638,12 @@ table {
     .footer-container {
         max-width: 985px;
         margin: 0 auto;
+    }
+    .floatleft{
+        padding: 2rem 0;
+    }
+    .floatright {
+        padding: 2rem 1.5rem;
     }
 }
 
