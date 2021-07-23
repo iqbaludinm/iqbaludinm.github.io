@@ -1,10 +1,14 @@
 :root {
-    --background-color: #0f101b;
+   /* --background-color: #0f101b;
     --secondary-color: #22242f;
     --headline-color: #fafaff;
-    --font-color: #a5a6b1;
+    --font-color: #a5a6b1; */
+    --background-color: #edeeef;
+    --secondary-color: #fafaff;
+    --headline-color: #00000f;
+    --font-color: #55555f;
     --primary-color: #0672f1;
-    --bg-light: #fff;
+    --bg-light: #fafaff;
     --bg-second: #f7f7f7;
     --primary-color: #fd9d49;
     --grey-color: #b0b0b0;
@@ -54,6 +58,7 @@ body {
     top: 0;
     left: 0;
     animation: navbarAnimate 0.5s ease-in-out forwards;
+    box-shadow: 0 0 10px rgb(0,0,0,.05);
 }
 
 .navbar-container {
@@ -331,10 +336,10 @@ body {
     /* border: 1px solid red; */
 }
 
-.container {
+.body-section {
     padding: 10px;
-    margin-top: 100px;
-}
+    margin-top: 80px;
+} 
 
 .img-responsive {
     max-width: 100%;
@@ -426,4 +431,36 @@ body {
 
 .text-muted {
     color: var(--grey-color);
+}
+
+@media screen and (max-width: 768px) {
+    .body-section {
+       /* display: grid;
+        grid-template-columns: 100%;*/
+        padding-top: 0px;
+    }
+    
+    .row {
+        width: 100%;
+        padding: 0;
+    }
+    
+    .col-3,
+    .col-9,
+    .col-12 {
+        width: 100%;
+        margin: 0;
+    }
+    
+    .card {
+        margin: 0;
+    }
+    
+    .card-content {
+        margin: 0;
+    }
+    
+    .card-logo {
+        margin: 0;
+    }
 }
