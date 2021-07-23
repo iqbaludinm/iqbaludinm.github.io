@@ -568,26 +568,29 @@ body {
     }
 }
 
-.container-footer {
-    height: 300px;
+.footer-container {
     background-color: var(--bg-light);
-    margin: 0 50px;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    position: relative;
+    padding: 0 1.5rem;
 }
 
 .copyright {
     width: 100%;
-    height: 50px;
+    padding: 1rem 2rem;
+    width: 100%;
     background-color: black;
     color: white;
     text-align: center;
     line-height: 50px;
-    font-size: 10px;
+    font-size: .9rem;
 }
 
 .floatleft {
-    float: left;
+    /* float: left; */
 }
 
 .progate {
@@ -598,15 +601,11 @@ body {
 
 td {
     padding: 5px;
-    font-size: 20px;
 }
 
 table {
-    margin-left: 40px;
+    /* margin-left: 40px; */
     margin-top: 20px;
-    background-color: white;
-    border-radius: 20px;
-    padding: 10px;
 }
 
 .logo img {
@@ -625,6 +624,30 @@ table {
 }
 
 .floatright {
-    padding-top: 40px;
-    margin-left: 900px;
+    padding: 1.5rem;
+}
+
+
+@media screen and (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: 100%;
+        margin: 0 1.5rem;
+    }
+
+    .floatleft {
+
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .footer-container {
+        max-width: 985px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .floatleft {
+        overflow-x: scroll;
+    }
 }
